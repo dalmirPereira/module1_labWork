@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character encoding-->
+    <meta charset="UTF-8">
+    <title>Dice Generator</title>
+    <!-- Link to external CSS file for styling -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header of the page -->
+        <h1>Dice Generator</h1>
+
+        <!-- Label for the dropdown to select a dice -->
+        <label for="diceSelect">Choose a dice:</label>
+
+        <!-- Dropdown for choosing a die with different faces (D6, D10) -->
+        <select id="diceSelect">
+            <option value="6">D6 (6 faces)</option>
+            <option value="10">D10 (10 faces)</option>
+        </select>
+        
+        <!-- Button to trigger the dice roll -->
+        <button onclick="rollDice()">Roll the Dice!</button>
+        
+        <!-- Div to display the result of the dice roll -->
+        <div class="result">
+            <h2>Result: <span id="diceResult">-</span></h2>
+        </div>
+    </div>
+
+    <!-- Link to external JavaScript file that handles logic -->
+    <script src="script.js"></script>
+</body>
+</html>
